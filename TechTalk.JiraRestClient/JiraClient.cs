@@ -23,7 +23,7 @@ namespace TechTalk.JiraRestClient
             this.username = username;
             this.password = password;
             
-            baseApiUrl = new Uri(new Uri(baseUrl), "rest/api/2/").ToString();
+            baseApiUrl = new Uri(new Uri(baseUrl), "rest/api/latest/").ToString();
             deserializer = new JsonDeserializer();
         }
 
@@ -87,9 +87,9 @@ namespace TechTalk.JiraRestClient
             }
         }
 
-        private IEnumerable<Issue<TIssueFields>> EnumerateIssuesInternal(String projectKey, String issueType, String fields = null, String jqlQuery = null)
+        private IEnumerable<Issue<TIssueFields>> EnumerateIssuesInternal(String projectKey, String issueType = null, String fields = null, String jqlQuery = null)
         {
-            var queryCount = 50;
+            var queryCount = 250;
             var resultCount = 0;
             while (true)
             {
