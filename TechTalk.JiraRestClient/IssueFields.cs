@@ -9,6 +9,7 @@ namespace TechTalk.JiraRestClient
         {
             status = new Status();
             timetracking = new Timetracking();
+            priority = new Priority();
 
             labels = new List<String>();
             comments = new List<Comment>();
@@ -21,7 +22,8 @@ namespace TechTalk.JiraRestClient
         public String description { get; set; }
         public Timetracking timetracking { get; set; }
         public Status status { get; set; }
-
+        public Priority priority { get; set; }
+        
         public JiraUser reporter { get; set; }
         public JiraUser assignee { get; set; }
         public List<JiraUser> watchers { get; set; } 
