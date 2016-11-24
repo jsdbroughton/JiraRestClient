@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DD1DD4D1-C257-456A-8690-F3A735D74AC1}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -13,14 +15,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTalk.JiraRestClient", "
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug net452|Any CPU = Debug net452|Any CPU
+		Debug net46|Any CPU = Debug net46|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug net452|Any CPU.ActiveCfg = Debug net452|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug net452|Any CPU.Build.0 = Debug net452|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug net46|Any CPU.ActiveCfg = Debug net46|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug net46|Any CPU.Build.0 = Debug net46|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug|Any CPU.ActiveCfg = Debug net46|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Debug|Any CPU.Build.0 = Debug net46|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Release|Any CPU.ActiveCfg = Release net452|Any CPU
+		{210529FA-454E-4C32-A2C8-353ECBD4DA05}.Release|Any CPU.Build.0 = Release net452|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
